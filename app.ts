@@ -40,7 +40,7 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;*/
 
-import express, { Express, Request, Response } from "express";
+import express, { Express } from "express";
 import indexRouter from "./routes/index";
 import studentsRouter from "./routes/students";
 
