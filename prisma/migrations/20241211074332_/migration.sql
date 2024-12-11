@@ -11,8 +11,8 @@ CREATE TABLE `student` (
     `country` VARCHAR(190) NULL,
     `notes` LONGTEXT NULL,
     `active` BOOLEAN NOT NULL DEFAULT true,
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL,
+    `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
 
     UNIQUE INDEX `student_email_key`(`email`),
     PRIMARY KEY (`id`)

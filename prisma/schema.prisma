@@ -29,8 +29,8 @@ model Student {
   country String? @db.VarChar(190)
   notes String? @db.LongText
   active Boolean @default(true)
-  created_at DateTime @default(now()) @db.Timestamp()
-  updated_at DateTime? @updatedAt @db.Timestamp()
+  created_at DateTime? @default(now()) @db.Timestamp()
+  updated_at DateTime? @default(now()) @db.Timestamp() @updatedAt
 
   @@map("student")
 }
